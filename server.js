@@ -1,4 +1,5 @@
 // server.js
+require('dotenv').config();
 const express = require('express');
 const openai = require('openai');
 const bodyParser = require('body-parser');
@@ -7,7 +8,7 @@ const app = express();
 const port = 3000; // You can choose any port
 
 // Your OpenAI API key
-const OPENAI_API_KEY = 'your_openai_api_key_here';
+const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
 
 openai.apiKey = OPENAI_API_KEY;
 
