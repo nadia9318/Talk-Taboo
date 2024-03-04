@@ -1,6 +1,6 @@
 from openai import OpenAI
 from flask import FLask, request, jsonify
-client = OpenAI(api_key = "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")
+client = OpenAI(api_key = "")
 
 def chat_with_gpt(prompt):
     response = client.chat.completions.create(
