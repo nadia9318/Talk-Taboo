@@ -1,6 +1,7 @@
-// src/pages/Home.js
 import React from 'react';
 import styled from 'styled-components';
+import { ReactComponent as SendIcon } from '/workspaces/Talk-Taboo/talk-taboo-app/src/assets/img/material-symbols_send-outline.svg'
+
 
 function Home() {
   const handleSubmit = (event) => {
@@ -9,18 +10,23 @@ function Home() {
     console.log("Message sent");
   };
 
-
   return (
     <ChatContainer>
       <h2>Chat with our Bot</h2>
-      <ChatInput type="text" placeholder="Say something..." />
-      <SendButton>Send</SendButton>
+      <form onSubmit={handleSubmit}>
+        <ChatInput type="text" placeholder="Say something..." />
+        <SendButton type="submit">
+          <SendIcon />
+        </SendButton>
+      </form>
     </ChatContainer>
   );
 }
 
-
 export default Home;
+
+// Styled-components remain the same
+
 
 const ChatContainer = styled.div`
 display: inline-flex;
