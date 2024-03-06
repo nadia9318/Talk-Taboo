@@ -6,6 +6,9 @@
     --background-color: #EBE8FF;;
     --text-color: #333;
     --font-family: 'Cabin', sans-serif;
+    --side-panel-gradient: #402353;
+    --Color-Base-Base-50: #fff;
+    --Right-panel-gradient: radial-gradient(61.35% 70.71% at 50% 50%, #EBE8FF 0%, #FFF 100%);
   }
   
   body {
