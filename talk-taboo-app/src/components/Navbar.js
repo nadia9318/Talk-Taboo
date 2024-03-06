@@ -4,11 +4,18 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 const Nav = styled.nav`
-  width: ${(props) => (props.isOpen ? '250px' : '0')};
-  position: fixed;
-  height: 100vh;
-  background-color: #333;
-  transition: 0.3s;
+width: 284px;
+height: 1040px;
+flex-shrink: 0;
+background: var(--side-panel-gradient, linear-gradient(180deg, #402353 0%, #8F4EB9 100%)); /* Example: Change navbar background */
+transition: 0.3s;   
+color: #EBE8FF;
+text-align: center;
+font-family: Cabin;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
 `;
 
 const NavToggle = styled.button`
