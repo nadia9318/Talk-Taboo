@@ -27,3 +27,6 @@ function addMessage(sender, message) {
     chatBox.appendChild(messageElem);
     document.getElementById('user-input').value = ''; // Clear input after sending
 }
+app.listen(port, () => {
+    console.log(`Server listening at http://localhost:${port}`);
+});
