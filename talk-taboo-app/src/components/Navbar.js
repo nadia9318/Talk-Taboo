@@ -25,10 +25,18 @@ const NavToggle = styled.button`
 `;
 
 const NavLink = styled(Link)`
-  display: block;
-  color: white;
-  padding: 16px;
-  text-decoration: none;
+display: block;
+color: #EBE8FF;
+padding: 16px;
+text-decoration: none;
+
+&:hover {
+  border-radius: 24px;
+  border: 1px solid #EBE8FF;
+  background: #EBE8FF;
+
+  /* tab shadow */
+  box-shadow: 0px 2px 4px 0px rgba(64, 35, 83, 0.15);
 `;
 
 function Navbar() {

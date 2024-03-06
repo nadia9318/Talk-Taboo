@@ -8,6 +8,7 @@ import Resources from './pages/Resources';
 import Settings from './pages/Settings';
 import Navbar from './components/Navbar';
 import GlobalStyles from './GlobalStyles';
+import './global.css';
 import logo from './logo.svg';
 import './App.css';
 
