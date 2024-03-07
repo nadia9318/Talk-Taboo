@@ -30,3 +30,15 @@ body, html {
     width: 50px;
     padding: 5px;
 }
+
+
+.user {
+    text-align: right;
+    color: blue;
+  }
+  
+  .bot {
+    text-align: left;
+    color: green;
+  }
+  

@@ -1,17 +1,19 @@
 /* src/global.css */
 
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    --background-color: #EBE8FF;;
+    --background-color: #EBE8FF; /* Removed extra semicolon */
     --text-color: #333;
     --font-family: 'Cabin', sans-serif;
     --side-panel-gradient: #402353;
     --Color-Base-Base-50: #fff;
     --Right-panel-gradient: radial-gradient(61.35% 70.71% at 50% 50%, #EBE8FF 0%, #FFF 100%);
-  }
+    --Dark-purple: #402353;
+}
   
-  body {
+body {
     margin: 0;
     padding: 0;
     width: 1440px;
@@ -19,4 +21,15 @@
     background: var(--background-color);
     color: var(--text-color);
     font-family: var(--font-family);
-  }
+}
+
+p {
+    width: 574px;
+    color: var(--Dark-purple, #402353);
+    text-align: center;
+    font-family: 'Raleway', sans-serif; /* Ensured the font-family value is quoted consistently */
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 24px */
+}

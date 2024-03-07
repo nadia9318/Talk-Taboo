@@ -1,0 +1,18 @@
+{
+  "name": "talk-taboo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"npm run start-frontend\" \"npm run start-backend\"",
+    "start-frontend": "cd talk-taboo-app && npm start",
+    "start-backend": "cd my-chatbot-backend && node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
+}

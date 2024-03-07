@@ -33,3 +33,7 @@ response = openai.Completion.create(
 )
 
 print(response.choices[0].text.strip())
+
+
+{"prompt": "Customer:log in to I can't  my account.", "completion": "Assistant: I'm sorry to hear that. Have you tried resetting your password?"}
+{"prompt": "Customer: How do I reset my password?", "completion": "Assistant: You can reset your password by clicking on 'Forgot Password?' at the login page and following the instructions."}
