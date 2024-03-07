@@ -75,13 +75,12 @@ function Home() {
     setMessage(''); // Clear input field
   };
 
+  
   return (
     <ChatContainer>
       <div>
         {conversation.map((msg, index) => (
-          <Message key={index} sender={msg.sender}>
-            {msg.text}
-          </Message>
+          <Message key={index} sender={msg.sender}>{msg.text}</Message>
         ))}
       </div>
       <InputContainer onSubmit={handleSubmit}>
@@ -101,6 +100,7 @@ function Home() {
     </ChatContainer>
   );
 }
+
 
 export default Home;
 
